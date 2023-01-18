@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: rgb(217, 112, 112);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.cow {
+    width: 465px;
+    height: 465px;
+    background: linear-gradient(180deg, #FFE195 0%, #FF5B5B 100%);
+    border-radius: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cow-link {
+    background: #FF6861;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 22px 70px;
+    border-radius: 100px;
+    display: inline-block;
+}
+
+/* h1 {
+    margin-top: 100px;
+} */
+
+#height {
+    background-color: rgb(188, 152, 222);
+    width: 100px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+#height p {
+    display: none;
+}
+
+#height:hover {
+    width: 300px;
+}
+
+#height:hover p {
+    display: block;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    /* background-color: rgb(217, 112, 112); */
+}
+
+.menu li {
+    /* background-color: rgb(193, 50, 50); */
+    margin: 5px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(208, 57, 170);
+    display: flex;
+    align-items: center;
+    /* сверху и снизу   слева и справа */
+    padding: 10px 20px;
+}
+
+.menu li a:hover {
+    background-color: rgb(127, 4, 4);
+}
+
+.menu li a img {
+    width: 50px;
+}
+
+img {
+    width: 300px;
+}
+
+p {
+    width: 300px;
+}
+
+
+
+#flex {
+    display: flex;
+    height: 1000px;
+    background-color: rgb(227, 181, 149);
+    color: aliceblue;
+    font-size: 48px;
+}
+
+.item {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.black {
+    background-color: black;
+}
+
+
+/* до и ниже max-width
+от и выше min-width */
+
+@media screen and (min-width: 2000px) {
+    .item {
+        width: 400px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    #flex {
+        flex-direction: column;
+    }
+
+    .item {
+        width: 100px;
+    }
+
+    .black {
+        background-color: rgb(112, 112, 112);
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 800px) {
+    #flex .item {
+        background-color: red;
+    }
+
+    .blue {
+        display: none;
+    }
+}
+
